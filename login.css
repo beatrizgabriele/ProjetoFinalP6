@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100..900&display=swap');
+
+/*listra preta no topo do site (decorativa - sem nenhuma função)*/
+.listra-preta {
+    width: 100%;
+    height: 14px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* icones para redes sociais  */
+.social-icones {
+    padding-top: 18px;
+    position: absolute;
+    right: 50px;
+    text-align: right;
+    width: 1300px;
+    
+
+}
+
+.social-icones a {
+    margin-left: 6px;
+
+}
+
+/* links de blog, supote e sobre nós */
+.top-links {
+    position: absolute;
+    left: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    padding-right: 25px;
+    padding-top: 20px;
+
+}
+
+.top-links a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+
+.top-links a:hover {
+    text-decoration: underline;
+
+}
+
+/* hr (linha) longe da borda  */
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* header da logo, perfil e carrinho */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+
+}
+
+/* logo */
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.icons-container a {
+    margin-left: 15px;
+}
+
+/* icone do perfil e carrinho  */
+.image-button {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url('Design\ sem\ nome.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.image-button:hover {
+    opacity: 0.8;
+}
+
+/* todos os (nav) pertencem ao menu e dropdown */
+
+.menu nav {
+    background-color: #090909;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: rgb(226, 225, 225);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #32b3e6
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #acddef;
+    color: #000000;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+/* login estilização*/
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  padding-right: 25px;
+  padding-top: 24px;
+
+}
+
+.container-login {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  padding-top: 20px;
+  background: #acddef;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #69d0f6;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 70%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border: 1px solid #acddef;
+  border-radius: 10px;
+
+}
+
+button {
+  width: 74%;
+  padding: 7px;
+  background-color: #00bbff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #9fcfe0;
+
+}
+
+.social-message {
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    padding-right: 25px;
+    padding-top: 24px; 
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+
+}
+
+.icon {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.icon:hover {
+  background-color: #e9e9e9;
+
+}
+
+/* footer ou rodapé */
+footer {
+    background-color: #090909;
+    color: rgb(243, 240, 240);
+    padding: 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: italic;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin-bottom: 20px;
+
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #acddef;
+
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+.footer-section ul {
+    list-style-type: none;
+
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+
+.social-links a:hover {
+    color: #acddef;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+
+}
+
+.footer-bottom p {
+    margin: 0;
+}
